@@ -15,8 +15,13 @@ class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         if (number%2==1){
             image.setBackgroundColor(Color.argb(255,0,0, 255))
         }
-        else{
+        else {
             image.setBackgroundColor(Color.argb(255, 255, 0, 0))
         }
+    }
+
+    fun bindLast(number: Int){
+        text.text=""
+        image.setBackgroundColor(Color.argb(0, 0, 0, 0))
     }
 }

@@ -33,8 +33,9 @@ class MyActivity : AppCompatActivity() {
             }
         }
         else {
-            adapter.setItems(listOf(1, 2, 3, 4, 5))
+            adapter.setItems(listOf(1, 2, 3, 4, 5, 6))
         }
+
 }
 
     override fun onSaveInstanceState(outState: Bundle) {

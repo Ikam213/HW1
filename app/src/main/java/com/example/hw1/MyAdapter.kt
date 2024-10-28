@@ -19,7 +19,12 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.bind(items[position])
+        if (position < items.size - 1) {
+            holder.bind(items[position])
+        }
+        else{
+            holder.bindLast(items[position])
+        }
     }
 
     fun setItems(list: List<Int>){
@@ -32,4 +37,7 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
         items.add(item)
         notifyDataSetChanged()
     }
+
+
+
 }
