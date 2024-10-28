@@ -23,7 +23,7 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
             holder.bind(items[position])
         }
         else{
-            holder.bindLast(items[position])
+            holder.bindLast()
         }
     }
 

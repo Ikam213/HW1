@@ -20,7 +20,7 @@ class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         }
     }
 
-    fun bindLast(number: Int){
+    fun bindLast(){
         text.text=""
         image.setBackgroundColor(Color.argb(0, 0, 0, 0))
     }
